@@ -191,6 +191,108 @@ header{
     margin: 30px 0;
 }
 
+/* insta section */
+.insta{
+    margin: 128px 240px;
+    text-align: center;
+}
+.insta-title{
+    color: rgb(39, 39, 39);
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 48px;
+    letter-spacing: 0%;
+}
+.insta-description{
+    color: rgba(39, 39, 39, 0.6);
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0%;
+    margin: 24px 0 48px 0;
+}
+.insta-imgs{
+    display: flex;
+    gap: 24px;
+}
+.insta-imgs img{
+    width: 100%;
+}
+
+/* latest-deal section */
+.latest-deal{
+    margin: 128px 240px;
+    padding: 122px 287px;
+    text-align: center;
+    border-radius: 8px;
+    background: url("../Flower Asset/Rectangle 9.png");
+    background-repeat: no-repeat;
+}
+.latest-deal-title{
+    color: rgb(39, 39, 39);
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 48px;
+    letter-spacing: 0%;
+}
+.latest-deal-description{
+    color: rgba(39, 39, 39, 0.6);
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0%;
+    margin-top: 16px;
+    margin-bottom: 48px;
+}
+form{
+    display: flex;
+    gap: 16px;
+}
+
+#email{
+    height: 64px;
+    width: 700px;
+    border: none;
+    border-radius: 8px;
+    background: rgb(255, 255, 255);
+    padding-left: 22px;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-height: 449px;
+    color: white;
+    background-color: black;
+    padding: 128px 0;
+}
+.footer-title{
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 58px;
+    letter-spacing: 0%;
+}
+.footer-title span{
+    color: rgb(229, 84, 115);
+}
+.footer-des{
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0%;
+    margin-top: 24px;
+    margin-bottom: 32px;
+    max-width: 625px;
+}
+.footer-rights{
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0%;
+}
 
 /* for mobile device */
 @media screen and (max-width: 576px) {
@@ -234,5 +336,28 @@ header{
         align-items: center;
         text-align: center;
         gap: 50px;
+    }
+    .insta{
+        margin: 10px;
+    }
+    .insta-imgs{
+        flex-direction: column;
+    }
+    .latest-deal{
+        margin: 10px;
+        padding: 10px;
+    }
+    form{
+        flex-direction: column;
+        align-items: center;
+    }
+    #email{
+        width: 400px;
+    }
+    form button{
+        position: relative;
+    }
+    footer{
+        padding: 20px;
     }
 }
