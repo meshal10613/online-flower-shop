@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: "Lato", "serif";
+    margin: 0;
+    padding: 0;
+}
+
+/* shared section  */
+.btn{
+    width: 177px;
+    height: 64px;
+    padding: 20px 43px 20px 43px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    background: rgb(229, 84, 115);
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: left;
+    cursor: pointer;
+    transition: 1s;
+}
+.btn:hover{
+    border: 0.5px solid rgb(229, 84, 115);
+    color: rgb(229, 84, 115);
+    background: white;
+}
+
+/* header section  */
+header{
+    padding: 50px 240px 0 240px;
+    background: rgba(229, 84, 115, 0.1);
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+}
+.head-container{
+    max-width: 710px;
+}
+.head-title{
+    color: rgb(39, 39, 39);
+    font-size: 5rem;
+    font-weight: 800;
+    line-height: 96px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-top: 200px;
+}
+.head-description{
+    color: rgba(39, 39, 39, 0.6);
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin: 35px 0;
+}
+
+/* feature section  */
+.feature{
+    padding: 150px 240px 50px 240px;
+    text-align: center;
+}
+.feature-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.feature-title{
+    color: rgb(39, 39, 39);
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 48px;
+    letter-spacing: 0%;
+}
+.feature-description{
+    color: rgba(39, 39, 39, 0.6);
+    font-size: 1.rem;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0%;
+    margin: 24px 0 48px 0px;
+    max-width: 600px;
+}
+.feature-cards{
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.card .card-title{
+    color: rgb(39, 39, 39);
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 35px;
+    letter-spacing: 0%;
+    text-decoration-line: underline;
+    cursor: pointer;
+}
+.card1{
+    width: 464px;
+    height: 538px;
+    border-radius: 300px 300px 0px 0px;
+    background: rgba(167, 33, 98, 0.15);
+}
+.card1 img{
+    position: relative;
+    top: 110px;
+}
+.card2{
+    width: 464px;
+    height: 538px;
+    border-radius: 300px 300px 0px 0px;
+    background: rgba(5, 151, 160, 0.15);
+}
+.card2 img{
+    position: relative;
+    top: 100px;
+}
+.card3{
+    width: 464px;
+    height: 538px;
+    border-radius: 300px 300px 0px 0px;
+    background: rgba(71, 125, 17, 0.15);
+}
+.card3 img{
+    position: relative;
+    top: 67px;
+}
+
+/* service section */
+.service{
+    margin: 128px 240px;
+    padding: 86px 175px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+    background: rgba(39, 39, 39, 0.05);
+    text-align: center;
+}
+.service h3{
+    color: rgba(39, 39, 39, 0.8);
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 35px;
+    letter-spacing: 0%;
+    margin-top: 25px;
+}
+
+
+/* for mobile device */
+@media screen and (max-width: 576px) {
+    header{
+        padding: 10px;
+        flex-direction: column-reverse;
+        gap: 50px;
+        text-align: center;
+    }
+    .head-title{
+        margin-top: 20px;
+        text-align: center;
+    }
+    .head-img img{
+        position: relative;
+        width: 100%;
+        padding-bottom: 0;
+    }
+    .feature{
+        margin-top: 50px;
+        padding: 0px;
+    }
+    .feature-cards{
+        flex-direction: column;
+        gap: 30px;
+        margin: 5px;
+    }
+    .service{
+        margin: 0px;
+        padding: 50px 20px;
+        flex-direction: column;
+        gap: 100px;
+    }
+    .service h3{
+        margin-top: 15px;
+    }
+}
